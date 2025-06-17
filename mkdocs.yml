@@ -1,0 +1,54 @@
+site_name: UT Astronomy Grad Wiki
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.instant
+    - content.code.copy
+    - content.action.edit
+    - content.tooltips
+    - external-links-open-in-new-tab
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: indigo
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: indigo
+
+extra_javascript:
+  - https://code.jquery.com/jquery-3.6.0.min.js
+  - https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js
+
+extra_css:
+  - https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - pymdownx.arithmatex
+  - toc:
+      permalink: true
+
+extra:
+  git_revision_date:
+    enable: true
+    fallback_to_build_date: true
+    type: iso_date  # or timeago, or datetime
+    locale: en
+
+nav:
+  - Home: index.md
+  - Resources: resources.md
+  - Class Materials: classes.md
+  - Involvement: involvement.md
+  - Quals Prep: quals_prep.md
+  - TACC: tacc.md
+
